@@ -1,0 +1,127 @@
+.center {
+	text-align: center;
+}
+
+#posts-list.has-comments li.no-comments {
+  display: none;
+}
+.wrapper input[type='text'],
+.wrapper input[type='email'] {
+  margin-bottom: 10px !important; 
+  display: block !important;
+  line-height: 1.4em !important;
+  border: 2px solid #044B7F;
+  padding: 5px; 
+    width: 30%;
+}
+.wrapper textarea {
+  display: block;
+  width: 40% ;
+  margin-bottom: 10px; 
+  line-height: 1.4em;
+    border: 2px solid #044B7F;
+    padding: 5px; 
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+input[type="submit"], input[type="button"] {
+	 background-color:#0099CC;
+    color:white;
+    border:none;
+    border-radius: .8em;
+    font-size:1em;
+    padding:.5em .75em;
+    display:block;
+/*    float:left;*/
+/*    margin-left:3em;*/
+    margin-bottom:2em;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover{
+    background-color:#044B7F;
+}
+h2{
+    margin-left: 0px !important;
+}
+
+.hentry {
+	display: flex !important;
+    border-bottom: 1px solid lightgray;
+	padding: 1.5em 0;
+}
+
+li:last-child .hentry > .hentry {border: 0; margin: 0;}
+
+.hentry .post-info * {font-style: normal;}
+
+.post-info{
+    display: inline-block;
+/*
+    background: none !important;
+    margin-top: 0px !important;
+    min-height: 0px !important;
+    width: 30%;
+*/
+    padding-left: 10px;
+}
+
+.in-comments{
+    padding: 0em !important;
+    padding-left: 1.2em !important;
+}
+.entry-content{
+    display: inline-block;
+}
+	/* Content */
+	.hentry footer {margin-bottom: 2em;}
+	.hentry footer address {display: inline;}
+	#posts-list footer address {display: block;}
+
+	/* Blog Index */
+	#posts-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+	#posts-list .hentry {
+/*        padding-left: 150px;*/
+/*        position: relative;*/
+/*        overflow: hidden;    */
+    }
+	#posts-list .hentry:hover {
+		background: #107E7D;
+		color: #fff;
+	}
+	#posts-list .hentry:hover a:link, #posts-list .hentry:hover a:visited {
+		color: #F6CF74;
+		text-shadow: 1px 1px 1px #333;
+	}
+	
+	#posts-list footer {
+		left: 10px;
+		position: absolute;
+		top: 1.5em;
+		width: 190px;
+	}
+.wrapper{
+    width:70%;
+    margin:0 auto;
+    border: 3px solid #044B7F;
+    border-radius:15px;
+    padding:2em;
+    padding-bottom:4em;
+}
+@media screen and (max-width:530px){
+    .wrapper{
+        width: 95%;
+        border: none;
+        margin: 0 !important;
+        padding: 2em 0 4em .5em !important;
+    }
+    .wrapper textarea{
+        width: 50%;
+    }
+}

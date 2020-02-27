@@ -1,0 +1,90 @@
+
+/* begino of display.none,hover and animation*/
+.burger-menu-block .li{
+    display:none;
+}
+.burger-menu-block:hover .li{
+    display:block;
+}
+.burger-menu:hover .burger-menu-block{
+    height:300px;
+    animation-name:height;
+    animation-duration:0.4s;
+}
+.burger-menu:hover{
+    width:200px;
+    animation-name:width;
+    animation-duration:0.4s;
+}
+/* nav */
+nav{
+    transform:translateZ(2px);
+    -webkit-transform:translateZ(2px);
+}
+.nav{
+    width:auto;
+    height:100px;
+    z-index: 1;
+    
+    /* transform:translateZ(2px);
+    -webkit-transform:translateZ(2px); */
+    /* border:1px solid black; */
+}
+.burger-menu{
+    width:0px;    /* here is to change width of burger menu ,default will be 300px*/
+    height:80px;
+    position: absolute;
+    right:0;
+}
+.burger-menu-block{
+    height:0px;   /* here is to change the height of burger menu /default will be 300px*/
+    /* border:1px solid black; */
+    margin-top:25px;
+    background-color: #107E7D;
+    display:block;
+}
+.burger-float-block-right{
+    width:auto;
+    height:70px;    /* here is the height that can control the burger menu height border */
+}
+.burger-float-right{
+    float:right;
+    padding-right:0px;/* here is for the burger margin, because it is float right. */
+}
+.burger{
+    background-color: white;
+    height:5px;
+    width:40px;
+    margin:10px;
+}
+.screen-min-570{
+    display:none;
+}
+
+.li a{
+    text-align:left;
+    padding-left:1.5em;
+}
+
+/* animation @keyframes*/
+@keyframes height{
+    from{height:0}
+    to{height:300px;}
+}
+@keyframes width{
+    from{width:0}
+    to{width:200px}
+}
+@keyframes display{
+    100%{display:block}
+}
+/* media query */
+@media screen and (max-width:760px){
+    .screen-max-570{
+        display:none;
+    }
+    .screen-min-570{
+        display:block;
+    }
+
+}

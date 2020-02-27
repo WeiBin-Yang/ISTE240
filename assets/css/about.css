@@ -1,0 +1,43 @@
+#wrapper{
+  width:70vw;
+  margin:0 auto 3em auto;
+}
+
+#about-h1{
+  margin-left:0;
+  border-bottom:2px solid #044B7F;
+  width:35vw;
+}
+
+h3.subheading-h3{
+  padding-left: 16px;
+}
+
+
+.boxComment{
+width: 90%;
+border: 2px solid #044B7F;
+position: relative;
+}
+.contactComment{
+  width: 80%;
+  border: 2px solid #044B7F;
+  position: relative;
+  left: 5%;
+}
+
+
+
+p {
+  padding: .2em;
+  padding-left: .5em;
+}
+
+@media screen and (max-width:570px){
+  #wrapper{
+    width:90vw;
+  }
+  .boxComment{
+    width: 100%;
+  }
+}

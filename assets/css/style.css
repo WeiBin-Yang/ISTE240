@@ -1,0 +1,178 @@
+/** COLORS 
+#107E7D  - Turquoise
+#044B7F - Dark blue 
+#ECEFEF - Grayish white (background)
+#CE8147 - Orange
+#253031 - Off Black
+#0099CC - Bright Blue 
+FONTS 
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+**/
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+    color:#253031;
+}
+
+h1, h2, h3{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight:700;
+    color:#044B7F;
+    margin:15px;
+}
+
+h4, h5, h6{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    color:#044B7F;
+    margin:15px;
+}
+
+h1{
+    font-size:2em;    
+}
+
+h2{
+    font-size:1.75em;
+}
+
+h3{
+    font-size:1.5em;
+}
+
+h4{
+    font-size:1.5em;
+}
+
+h5{
+    font-size:1.25em;
+}
+
+
+a{
+    color:#0099CC;
+}
+
+a:visited{
+    color:#107E7D;
+}
+
+pre{
+    color:#CE8147;
+    padding:.5em;
+    padding-left:2.5em;
+    font-size:1.5em;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.cmd {
+    font-family: 'Roboto Mono', monospace;
+    color:#CE8147;
+}
+
+p{
+    padding:1em;
+    padding-left:1.5em;
+}
+
+button{
+    background-color:#0099CC;
+    color:white;
+    border:none;
+    border-radius: .8em;
+    font-size:1.25em;
+    padding:.5em .75em;
+    margin:0 auto;
+    display:block;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:rgb(182, 197, 197);
+}
+
+.active{
+  color: black!important;    
+}
+
+nav{
+    margin:0;
+    background-color:#107E7D;
+    position:sticky;
+    top:0;
+    z-index: 1;
+}
+
+nav img{
+    float:left;
+    margin:1em 1em 0 1em;
+    max-height:5em;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: right;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1em 26px 50px 0px;
+    text-decoration: none;
+}
+
+nav li a:visited{
+    color:white;
+}
+
+nav li a:hover{
+    color:black;
+}
+/* .nav for screen min 570 */
+.nav a{
+    display: block;
+    color: white;
+    text-align: center;
+    margin-top:2%;
+    text-decoration: none;
+
+}
+.nav a:visited{
+    color:white;
+}
+.nav a:hover{
+    color: black;
+}
+
+
+/*footer*/
+
+footer{
+    background-color:#107E7D;
+    min-height:30vh;
+    padding:1em;
+    clear:both;
+    margin-top:2em;
+}
+
+footer p{
+    width:40vw;
+    margin:0 auto;
+    padding:.5em;
+    color:white;
+}
